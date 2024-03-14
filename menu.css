@@ -1,0 +1,31 @@
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-cont{
+  display: none;
+  position: absolute;
+  background-color: aliceblue
+  min-width: 160px;
+  padding: 12px 16px;
+}
+
+.dropdown:hover .dropdown-cont{
+  display: block;
+}
+
+.dropdown .dropdown-cont .list{
+  list-style: none; /*retira o icone bolinha da lista*/
+}
+
+.dropdown .dropdown-cont .list ul{
+  background: brown; /*define o fundo do espaço dos menus*/
+  list-style: none; /*retira o icone bolinha da lista*/
+  color: blueviolet;
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+}

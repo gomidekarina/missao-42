@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-nav{
+    position: relative;
+    width: 180px;
+    height: 50px;
+    background-color: blue;
+    color: antiquewhite;
+    display: flex;
+    align-items: center;
+
+}
+
+.menu-nav .menu-nome{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    user-select: none; /*nao gera acao sob o nome quando o cursor passa por ele*/
+    font-family: monospace;
+    font-size: larger;
+    background: violet;
+}
+
+.menu-nav .menu-cx{
+    position: absolute;
+    right: 0;
+    color: brown;
+    top: calc(100%);
+    display: none;
+}
+
+.menu-nav .menu-cx ul{
+    flex-direction: column;
+    background: brown; /*define o fundo do espaço dos menus*/
+    list-style: none; /*retira o icone bolinha da lista*/
+}
+
+.menu-nav .menu-cx ul li{
+    
+    padding: 5px;
+    background-color: brown;
+    transition: 0s;
+}
+
+
+/*.menu-nav .menu-cx ul li:hover{
+    background-color: blueviolet;
+    transition: 0s;
+}
+
+.menu-nav .menu-cx ul li a{
+    text-decoration: none;
+    color: aqua;
+    display: flex;
+    align-items: center;
+}*/
+
+

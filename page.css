@@ -1,0 +1,58 @@
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 2em;
+    color: aquamarine;
+    pointer-events: none;
+}
+
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(puppy3.jpeg);
+}
+
+.parallax2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(puppy2.jpeg);
+}
+
+#text{
+    position: absolute;
+    font-size: 5em;
+    color: aquamarine;
+}
+
+.sec{
+    position: relative;
+    background: black;
+    padding: 100px;
+}
+
+.sec h2{
+    font-size: 3em;
+    color: aquamarine;
+    margin-bottom: 100px;
+}
+
+.sec p{
+    font-size: 1em;
+    color: aquamarine;
+    font-weight: 300;
+}

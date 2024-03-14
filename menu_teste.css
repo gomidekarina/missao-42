@@ -1,0 +1,88 @@
+.container{
+    height: 100%;
+    display: flex; /*permite que eu use a estrutura de flexbox de css*/
+    align-items: center;
+    justify-content: center;
+}
+
+/*Aqui eu crio uma classe que nao ficara visivel, 
+mas que me permitira utilizar as suas funcoes
+Defino posicao absolute para ficar no meio e 
+defino opacidade 0, assim ele nao vai aparecer*/
+#checkbox-menu{
+    position: absolute;
+    opacity: 0;
+}
+
+label{
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 22px;
+    width: 30px;
+}
+
+label span{
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px; /*Deixa a borda arredondada*/
+    background-color: #f61234;
+    transition: 0.25s ease-in-out;
+}
+
+/*:nth-child() define as linhas filhas que serao desenhadas,
+separadas pela distancia definida do topo,
+e que receberao todas as especificacoes definidas em
+label span*/
+label span:nth-child(1){ 
+top: 0;
+}
+
+label span:nth-child(2){
+top: 8px;
+}
+
+label span:nth-child(3){
+top: 16px;
+}
+
+/*Estou indicando que quando o meu checkbox estiver 
+checado eu terei uma acao de cada um dos meus spans filhos
+conforme descricao abaixo*/
+#checkbox-menu:checked + label span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+#checkbox-menu:checked + label span:nth-child(2){
+    opacity: 0;
+}
+
+#checkbox-menu:checked + label span:nth-child(3){
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-child {
+    display: none;
+    background-color: skyblue;
+    min-width: 200px;
+}
+
+.dropdown-child a {
+    color: blue;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-child {
+    display: block;
+}

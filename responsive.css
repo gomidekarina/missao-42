@@ -1,0 +1,14 @@
+.bloco1{
+    background-color: blue;
+    color: aliceblue;
+}
+
+.bloco2{
+    background-color: green;
+    color: aliceblue;
+}
+
+table,tr,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
